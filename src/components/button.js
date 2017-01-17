@@ -45,9 +45,9 @@ Button.propTypes = ButtonPropTypes;
 export const Link = (props) => {
   const passProps = removeProps(props, objectKeys(Button.propTypes));
 
-  const { element } = props;
+  const { linkElement } = props;
   // JSX expects uppercase React Component variables
-  const Elem = element || 'a';
+  const Elem = linkElement || 'a';
 
   return <Elem {...passProps} className={createButtonClassName(props)}/>;
 };
