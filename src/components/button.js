@@ -14,7 +14,10 @@ const ButtonPropTypes = {
   isHollow: PropTypes.bool,
   isExpanded: PropTypes.bool,
   isDisabled: PropTypes.bool,
-  isDropdown: PropTypes.bool
+  isDropdown: PropTypes.bool,
+  // optional element type, default is <a />, either string or React Component
+  linkElement: PropTypes.oneOfType([ PropTypes.element, PropTypes.string ])
+
 };
 
 /**
@@ -42,7 +45,11 @@ Button.propTypes = ButtonPropTypes;
 export const Link = (props) => {
   const passProps = removeProps(props, objectKeys(Button.propTypes));
 
-  return <a {...passProps} className={createButtonClassName(props)}/>;
+  const { element } = props;
+  // JSX expects uppercase React Component variables
+  const Elem = element || 'a';
+
+  return <Elem {...passProps} className={createButtonClassName(props)}/>;
 };
 
 Link.propTypes = ButtonPropTypes;
