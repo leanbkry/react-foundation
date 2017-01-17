@@ -1,22 +1,20 @@
-# React + Foundation
+# Fork of react-foundation
+Please check for Documentation: https://react.foundation
 
-[![Build Status](https://travis-ci.org/nordsoftware/react-foundation.svg?branch=develop)](https://travis-ci.org/nordsoftware/react-foundation)
-[![Test Coverage](https://codeclimate.com/github/nordsoftware/react-foundation/badges/coverage.svg)](https://codeclimate.com/github/nordsoftware/react-foundation/coverage)
-[![Code Climate](https://codeclimate.com/github/nordsoftware/react-foundation/badges/gpa.svg)](https://codeclimate.com/github/nordsoftware/react-foundation)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nordsoftware/react-foundation/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nordsoftware/react-foundation/?branch=master)
-[![StyleCI](https://styleci.io/repos/53612920/shield?style=flat)](https://styleci.io/repos/53612920)
-[![npm version](https://img.shields.io/npm/v/react-foundation.svg)](https://www.npmjs.com/package/react-foundation)
-[![npm downloads](https://img.shields.io/npm/dt/react-foundation.svg)](https://www.npmjs.com/package/react-foundation)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/nordsoftware/react-foundation/master/LICENSE)
-[![Gitter](https://img.shields.io/gitter/room/norsoftware/open-source.svg?maxAge=2592000)](https://gitter.im/nordsoftware/open-source)
+# Major Changes
+- Button as Link can be passed Element (mandatory to use react-router Link)
+
+## Old README
+
+## React + Foundation
 
 [Foundation](http://foundation.zurb.com/sites/docs/) as [React](https://facebook.github.io/react/) components.
 
-## Demo
+### Demo
 
 [https://react.foundation](https://react.foundation)
 
-## Motivation
+### Motivation
 
 [Foundation](http://foundation.zurb.com) is both feature-rich and easy to customize. 
 [React](https://facebook.github.io/react/) on the other hand is awesome because of its simplicity.
@@ -29,7 +27,7 @@ but there was none that met our needs. So we collected our notes, started coding
 
 We hope you enjoy it as much as we do!
 
-## What's in the box?
+### What's in the box?
 
 The goal is to wrap every part of Foundation into re-usable React components following the framework's
 best practices. The primary focus is ease-of-use and extensibility. We use pure render components, 
@@ -61,7 +59,7 @@ Here is a list of the available components:
 
 More components coming soon!
 
-## Install
+### Install
 
 Install library:
 
@@ -69,7 +67,7 @@ Install library:
 npm install react-foundation --save
 ```
 
-## Usage
+### Usage
 
 ```js
 import Foundation from 'react-foundation';
@@ -81,7 +79,7 @@ Documentation is at [https://react.foundation](https://react.foundation) and
 you can use our [React starter](https://github.com/nordsoftware/react-starter) template
 as a reference.
 
-## Test
+### Test
 
 Run test suite:
 
@@ -89,10 +87,10 @@ Run test suite:
 npm test
 ```
 
-## Credits
+### Credits
 
 - Thanks to [@jmreidy](https://github.com/jmreidy) for releasing the `react-foundation` package name to us on [NPM](https://www.npmjs.com/).
 
-## License
+### License
 
 See [LICENSE](LICENSE).
