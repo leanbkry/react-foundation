@@ -9,7 +9,7 @@ import { GeneralPropTypes, createClassName, generalClassNames, removeProps, obje
  */
 const ButtonPropTypes = {
   ...GeneralPropTypes,
-  color: PropTypes.oneOf(objectValues(ButtonColors)),
+  color: PropTypes.oneOf(objectValues(ButtonColors).concat(objectValues(CustomButtonColors))),
   size: PropTypes.oneOf(objectValues(ButtonSizes)),
   isHollow: PropTypes.bool,
   isExpanded: PropTypes.bool,
@@ -18,6 +18,13 @@ const ButtonPropTypes = {
   // optional element type, default is <a />, either string or React Component
   linkElement: PropTypes.oneOfType([ PropTypes.element, PropTypes.string ])
 
+};
+
+let CustomButtonColors = [];
+
+export const addCustomButtonColors = (buttonColors) => {
+  CustomButtonColors = buttonColors;
+  ButtonPropTypes.color = PropTypes.oneOf(objectValues(ButtonColors).concat(objectValues(CustomButtonColors)));
 };
 
 /**

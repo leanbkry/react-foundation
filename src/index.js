@@ -1,6 +1,6 @@
 export { Badge } from './components/badge';
 export { Breadcrumbs, BreadcrumbItem } from './components/breadcrumbs';
-export { Button, Link } from './components/button';
+export { Button, Link, addCustomButtonColors } from './components/button';
 export { ButtonGroup } from './components/button-group';
 export { Callout } from './components/callout';
 export { CloseButton } from './components/close-button';
